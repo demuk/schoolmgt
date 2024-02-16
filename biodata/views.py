@@ -6,3 +6,8 @@ from django.template import loader
 def home(request):
     template = loader.get_template('home.html')
     return HttpResponse(template.render())
+
+
+def studentdetails(request):
+    template = loader.get_template('studentdetails.html')
+    return HttpResponse(template.render())
