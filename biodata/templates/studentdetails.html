@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students Details</title>
-</head>
-<body>
-    <h1>
-        STUDENTS DETAILS
-    </h1>
+{% extends "master.html" %}
+{% block title %}
+Masomoni - Student details
+{% endblock%}
 
-    <p>
-        Name :
-    </p>
-    <p>
-        Reg No :
-    </p>
-    <p>
-        Grade
-    </p>
-    <p>
-    </p>
-</body>
-</html>
+{% block content %}
+<h1>
+    STUDENTS DETAILS
+</h1>
+
+<p>
+    Name :
+</p>
+<p>
+    Reg No :
+</p>
+<p>
+    Grade
+</p>
+
+{% endblock  %}
