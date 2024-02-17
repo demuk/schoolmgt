@@ -7,3 +7,6 @@ class Student(models.Model):
     last_name = models.CharField(max_length=255)
     reg_no = models.IntegerField()
     grade = models.CharField(max_length=2)
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
