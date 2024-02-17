@@ -4,18 +4,20 @@ Masomoni - Student details
 {% endblock%}
 
 {% block content %}
+
+{% for x in student %}
 <h1>
     STUDENTS DETAILS
 </h1>
 
 <p>
-    Name :
+    Name : {{ x.first_name }} {{ x.last_name }}
 </p>
 <p>
-    Reg No :
+    Reg No : {{ x.reg_no }}
 </p>
 <p>
-    Grade
+    Grade : {{ x.grade }}
 </p>
-
+{% endfor %}
 {% endblock  %}
