@@ -5,6 +5,8 @@ Masomoni - Student LIST
 
 {% block content %}
 
+{% for x in student %}
+
 <h1>
     STUDENTS LIST
 </h1>
@@ -24,4 +26,14 @@ Masomoni - Student LIST
 {% endif %}
 
 
+<p>
+    Name : {{ x.first_name }} {{ x.last_name }}
+</p>
+<p>
+    Reg No : {{ x.reg_no }}
+</p>
+<p>
+    Grade : {{ x.grade }}
+</p>
+{% endfor %}
 {% endblock  %}
