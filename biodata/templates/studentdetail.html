@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+Masomoni - student information
+{% endblock %}
+
+
+{% block content %}
+
+<h1>Student Details</h1>
+
+<p>First Name : {{ student.first_name }} </p>
+<p>Last Name  : {{ student.last_name }}</p>
+<p>Reg No.    : {{ student.reg_no }}</p>
+<p>Grade      : {{student.grade }}</p>
+
+{% endblock  %}
