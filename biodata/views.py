@@ -11,3 +11,7 @@ def home(request):
 def studentdetails(request):
     template = loader.get_template('studentdetails.html')
     return HttpResponse(template.render())
+
+def signup(request):
+    template = loader.get_template('signup.html')
+    return HttpResponse(template.render())
