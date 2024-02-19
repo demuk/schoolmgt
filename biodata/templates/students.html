@@ -1,0 +1,26 @@
+{% extends "master.html" %}
+{% block title %}
+Masomoni - Student LIST
+{% endblock%}
+
+{% block content %}
+
+<h1>
+    STUDENTS LIST
+</h1>
+
+{% if student %}
+
+<ul>
+    {% for x in student %}
+    <li>
+        {{ x.first_name }} | {{ x.grade }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% else %}
+<p> There are no students available </p>
+
+{% endif %}
+{% endblock  %}
