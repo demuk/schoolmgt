@@ -14,7 +14,7 @@ Masomoni - Student LIST
 <ul>
     {% for x in student %}
     <li>
-        {{ x.first_name }} | {{ x.grade }}
+        <a href="{% url 'studentdetail' student_id=x.pk %}">{{ x.first_name }}</a> | {{ x.grade }}
     </li>
     {% endfor %}
 </ul>
