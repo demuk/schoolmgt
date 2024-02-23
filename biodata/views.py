@@ -6,8 +6,13 @@ from .forms import StudentForm
 
 # Create your views here.
 def home(request):
-    template = loader.get_template('home.html')
-    return HttpResponse(template.render())
+    # Number of visits to this view
+    num_visits = request.session.get('num_visits', 0)
+    request.session['num_visits'] = num_visits + 1
+    context = {
+        'num_visits' : num_visits,
+    }
+    return render(request, 'home.html', context=context)
 
 def register_student(request):
     if request.method == 'POST':
